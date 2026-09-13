@@ -1,5 +1,4 @@
 <?php
-// File: app/Controller/Auth_controller.php
 namespace App\Controller;
 
 class Auth_controller 
@@ -9,7 +8,6 @@ class Auth_controller
         if (session_status() === PHP_SESSION_NONE) { session_start(); }
         require_once __DIR__ . '/../View/Auth/login.php';
     }
-
     public function login() 
     {
         if (session_status() === PHP_SESSION_NONE) { session_start(); }
