@@ -2,7 +2,7 @@
 <html>
 <head><title>Login</title></head>
 <body style="padding: 50px;">
-    <h2>Form Login</h2>
+    <h2>Form Login</h2>  <!--form login-->
     
     <?php if (isset($_SESSION['flash'])): ?>
         <p style="color: red;"><?= $_SESSION['flash']; ?></p>
@@ -13,7 +13,6 @@
         <label>Username (isi: admin):</label><br>
         <input type="text" name="username"><br><br>
         <label>Password (isi: admin231):</label><br>
->>>>>>> fitur-login
         <input type="password" name="password"><br><br>
         <button type="submit">Login</button>
     </form>
