@@ -4,10 +4,9 @@
 <body style="padding: 50px;">
     <h2>Form Login</h2>
     
-    <!-- Menampilkan Flash Message jika ada -->
     <?php if (isset($_SESSION['flash'])): ?>
         <p style="color: red;"><?= $_SESSION['flash']; ?></p>
-        <?php unset($_SESSION['flash']); // Hapus setelah ditampilkan agar muncul 1x saja[cite: 1] ?>
+        <?php unset($_SESSION['flash']); ?>
     <?php endif; ?>
 
     <form action="/S1-Akademik/public/login" method="POST">
