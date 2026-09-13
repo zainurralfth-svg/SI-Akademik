@@ -31,11 +31,9 @@ class Auth_controller
     public function logout() 
     {
         if (session_status() === PHP_SESSION_NONE) { session_start(); }
-        session_destroy(); // Hapus semua session login[cite: 1]
+        session_destroy();
         
-        session_start(); // Mulai session baru khusus untuk menyimpan pesan logout
-        
-        // PENYELESAIAN TUGAS MANDIRI: Flash message saat logout[cite: 1]
+        session_start();
         $_SESSION['flash'] = 'Anda telah logout'; 
         header('Location: /S1-Akademik/public/login');
         exit;
